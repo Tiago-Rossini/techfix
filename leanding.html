@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso prático de montagem e manutenção de computadores na TechFix - Torne-se um técnico profissional">
+    <title>Curso Profissionalizante de Hardware - TechFix</title>
+    
+    <!-- Tailwind CSS + Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <style>
+        :root {
+            --razer-green: #30bf00;
+            --dark-bg: #111827;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('bg-pattern.jpg');
+            background-size: cover;
+        }
+
+        .benefit-card {
+            transition: transform 0.3s ease;
+            border: 1px solid #30bf0033;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px #30bf00;
+        }
+
+        .slick-slide {
+            padding: 0 15px;
+        }
+
+        .slick-dots li button:before {
+            color: var(--razer-green) !important;
+            font-size: 10px;
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: #ffd700;
+            color: #000;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .hover\:bg-razer-green:hover {
+    background-color: #30bf00;
+}
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    
+    <!-- Cabeçalho Hero -->
+    <header class="hero-bg py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl font-bold mb-6 animate-fade-in-down">
+                <img src="" alt="">
+                <span class="text-razer">Domine o Hardware</span><br>
+                <span class="text-xl block mt-4">Curso Profissionalizante com Certificação</span>
+            </h1>
+            
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="#inscricao" class="bg-razer hover:bg-razer-green px-8 py-3 rounded-full font-bold transform duration-500 ease-in-out transition-all hover:scale-105">
+                    <i class="fas fa-tools mr-2"></i>Quero me Inscrever
+                </a>
+                <a href="#detalhes" class="border-2 border-razer text-razer hover:bg-razer hover:text-white px-8 py-3 rounded-full transform transition-all">
+                    <i class="fas fa-info-circle mr-2"></i>Saiba Mais
+                </a>
+            </div>
+    </header>
+
+    <!-- Destaques -->
+    <section class="bg-gray-800 py-16">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+            <div class="p-6">
+                <i class="fas fa-certificate text-4xl text-razer mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Certificação Reconhecida</h3>
+                <p class="text-gray-400">Validação profissional para atuar no mercado</p>
+            </div>
+            <div class="p-6">
+                <i class="fas fa-briefcase text-4xl text-razer mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Oportunidade de Emprego</h3>
+                <p class="text-gray-400">Melhores alunos podem ser contratados</p>
+            </div>
+            <div class="p-6">
+                <i class="fas fa-wrench text-4xl text-razer mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Aulas 100% Práticas</h3>
+                <p class="text-gray-400">Laboratório equipado com última geração</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade Curricular -->
+    <section id="detalhes" class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12 text-razer">O Que Você Vai Aprender</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="benefit-card bg-gray-800 p-6 rounded-xl">
+                <div class="text-razer mb-4">
+                    <i class="fas fa-microchip fa-2x"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Componentes e Montagem</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>• Identificação de peças e componentes</li>
+                    <li>• Técnicas profissionais de montagem</li>
+                    <li>• Configuração avançada de BIOS/UEFI</li>
+                    <li>• Gerenciamento de cabos e airflow</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="benefit-card bg-gray-800 p-6 rounded-xl">
+                <div class="text-razer mb-4">
+                    <i class="fas fa-tools fa-2x"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Manutenção Preventiva</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>• Limpeza profissional de componentes</li>
+                    <li>• Troca de pasta térmica</li>
+                    <li>• Diagnóstico de falhas hardware</li>
+                    <li>• Uso de equipamentos de teste</li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="benefit-card bg-gray-800 p-6 rounded-xl">
+                <div class="text-razer mb-4">
+                    <i class="fas fa-desktop fa-2x"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Sistemas Operacionais</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>• Instalação de Windows/Linux</li>
+                    <li>• Configuração de dual boot</li>
+                    <li>• Drivers e atualizações</li>
+                    <li>• Virtualização básica</li>
+                </ul>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="benefit-card bg-gray-800 p-6 rounded-xl">
+                <div class="text-razer mb-4">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Segurança e Redes</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>• Configuração básica de redes</li>
+                    <li>• Segurança física de componentes</li>
+                    <li>• Backup e recuperação de dados</li>
+                    <li>• Configuração de firewall</li>
+                </ul>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="benefit-card bg-gray-800 p-6 rounded-xl">
+                <div class="text-razer mb-4">
+                    <i class="fas fa-bolt fa-2x"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Energia e Econômia</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>• Noções de eletricidade aplicada</li>
+                    <li>• Teste de fontes de alimentação</li>
+                    <li>• No-breaks e estabilizadores</li>
+                    <li>• Economia de energia</li>
+                </ul>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="benefit-card bg-gray-800 p-6 rounded-xl">
+                <div class="text-razer mb-4">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Otimização</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>• Overclocking seguro</li>
+                    <li>• Gestão térmica avançada</li>
+                    <li>• Benchmarking</li>
+                    <li>• Atualização de firmware</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-6 py-16 text-center">
+        <div class="max-w-2xl mx-auto relative">
+            <div class="pricing-badge">
+                Economize 30%
+            </div>
+            <div class="bg-gray-800 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4">Investimento</h3>
+                <div class="text-4xl font-bold text-razer mb-4">
+                    <span class="line-through text-gray-500 text-2xl mr-2">R$340</span>
+                    R$240
+                </div>
+                <p class="text-gray-400 mb-6">ou 3x de R$80 no cartão</p>
+                <ul class="text-left max-w-xs mx-auto space-y-3 mb-8">
+                    <li><i class="fas fa-check text-razer mr-2"></i>Apostila digital</li>
+                    <li><i class="fas fa-check text-razer mr-2"></i>Acesso vitalício ao conteúdo</li>
+                    <li><i class="fas fa-check text-razer mr-2"></i>Certificado físico</li>
+                </ul>
+                <a href="#inscricao" class="bg-razer hover:bg-razer-green px-8 py-3 duration-500 ease-in-out rounded-full font-bold inline-block">
+                    Garantir Minha Vaga
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-6 py-16">
+        <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-xl shadow-xl">
+            <h2 class="text-3xl font-bold text-center mb-8 text-razer">Inscreva-se Agora</h2>
+            <form class="space-y-6" id="formInscricao">
+                <div>
+                    <label class="block text-gray-300 mb-2">Nome Completo</label>
+                    <input type="text" required class="w-full px-4 py-3 bg-gray-700 rounded-lg focus:ring-2 focus:ring-razer">
+                </div>
+                
+                <div>
+                    <label class="block text-gray-300 mb-2">E-mail</label>
+                    <input type="email" required class="w-full px-4 py-3 bg-gray-700 rounded-lg focus:ring-2 focus:ring-razer">
+                </div>
+
+                <div>
+                    <label class="block text-gray-300 mb-2">Telefone/WhatsApp</label>
+                    <input type="tel" required class="w-full px-4 py-3 bg-gray-700 rounded-lg focus:ring-2 focus:ring-razer">
+                </div>
+
+                <button type="submit" class="w-full bg-razer hover:bg-razer-green py-4 rounded-lg duration-500 ease-in-out font-bold transition-all">
+                    Garantir Minha Vaga
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="bg-gray-800 py-16">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-razer">Dúvidas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <!-- Pergunta 1 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <button class="flex justify-between items-center w-full px-6 py-4 bg-gray-800">
+                        <span class="font-semibold text-left">Preciso ter experiência prévia?</span>
+                        <i class="fas fa-chevron-down text-razer transition-transform"></i>
+                    </button>
+                    <div class="px-6 py-4 hidden">
+                        <p class="text-gray-300">Não é necessário nenhum conhecimento prévio. O curso começa desde os conceitos básicos até as técnicas avançadas, sendo ideal tanto para iniciantes quanto para quem quer se aperfeiçoar.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <button class="flex justify-between items-center w-full px-6 py-4 bg-gray-800">
+                        <span class="font-semibold text-left">Qual a duração do curso?</span>
+                        <i class="fas fa-chevron-down text-razer transition-transform"></i>
+                    </button>
+                    <div class="px-6 py-4 hidden">
+                        <p class="text-gray-300">O curso tem duração total de 6 semanas, com aulas presenciais 3 vezes por semana. Carga horária total de 40 horas com certificação reconhecida.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <button class="flex justify-between items-center w-full px-6 py-4 bg-gray-800">
+                        <span class="font-semibold text-left">Preciso trazer equipamentos?</span>
+                        <i class="fas fa-chevron-down text-razer transition-transform"></i>
+                    </button>
+                    <div class="px-6 py-4 hidden">
+                        <p class="text-gray-300">Não. A TechFix fornece todos os equipamentos necessários durante as aulas, incluindo ferramentas profissionais, componentes e computadores para prática.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Investimento -->
+    
+   
+
+    <!-- Rodapé -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-razer"><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="#" class="text-gray-400 hover:text-razer"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="text-gray-400 hover:text-razer"><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 TechFix - CNPJ 00.000.000/0001-00</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        // Inicializações
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+            // FAQ Accordion
+            $('.faq button').click(function() {
+                $(this).next('p').slideToggle();
+                $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+            });
+        });
+    </script>
+
+<script>
+    $(document).ready(function(){
+        // FAQ Accordion
+        $('.bg-gray-900 button').click(function() {
+            const answer = $(this).parent().find('div');
+            const icon = $(this).find('i');
+            
+            answer.slideToggle(300);
+            icon.toggleClass('fa-chevron-down fa-chevron-up');
+            $(this).toggleClass('bg-gray-800');
+        });
+    });
+</script>
+
+<script>
+    module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'razer-green': '#30bf00', // Adiciona a cor personalizada
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
+};
+</script>
+</body>
+</html> 
